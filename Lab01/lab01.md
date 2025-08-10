@@ -1,12 +1,15 @@
 # Лабораторная работа. Базовая настройка коммутатора
 
 ## 	Топология
-the picture here!
+
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic01.JPG)
 
 ##	Таблица адресации
 
-the picture here
+| Устройство | Интерфейс | IP-адрес/префикс |
+| ---- | ---- |
+| S1 | VLAN | 192.168.1.2/24 |
+| PC-A | NIC | 192.168.1.10/24 |
 
 ### 	Задачи
 #### Часть 1. Проверка конфигурации коммутатора по умолчанию
@@ -23,9 +26,6 @@ the picture here
   Необходимо использовать консольное подключение для первоначальной настройки коммутатора, так как выполняется первое включение оборудования (подключение "из коробки") и необходимо провести первоначальное конфигурирование.
   
 a,b)  Press RETURN to get started!
-
-
-
 Switch>enable
 Switch#show running-config
 Building configuration...
@@ -38,11 +38,6 @@ no service timestamps debug datetime msec
 no service password-encryption
 !
 hostname Switch
-!
-!
-!
-!
-!
 !
 spanning-tree mode pvst
 spanning-tree extend system-id
@@ -103,18 +98,12 @@ interface Vlan1
  no ip address
  shutdown
 !
-!
-!
-!
 line con 0
 !
 line vty 0 4
  login
 line vty 5 15
  login
-!
-!
-!
 !
 end
 
@@ -199,9 +188,6 @@ Directory of flash:/
 
 Имя образа Cisco IOS - 2960-lanbasek9-mz.150-2.SE4.
 
-
-
-
 #### Часть 2. Настройка базовых параметров сетевых устройств
 
 а) Switch#configure terminal
@@ -239,7 +225,7 @@ S1#
 
 
 ### Шаг 2. Настройте IP-адрес на компьютере PC-A.
-look at the pic02
+
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic02.JPG)
 
 #### Часть 3. Проверка сетевых подключений
@@ -260,10 +246,7 @@ hostname S1
 !
 enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
 !
-!
-!
 no ip domain-lookup
-!
 !
 !
 spanning-tree mode pvst
@@ -327,8 +310,6 @@ interface Vlan1
 banner motd ^C
 Unauthorized access is strictly prohibited. ^C
 !
-!
-!
 line con 0
  password 7 0822455D0A16
  logging synchronous
@@ -340,8 +321,6 @@ line vty 0 4
 line vty 5 15
  password 7 0822455D0A16
  login
-!
-!
 !
 !
 end
