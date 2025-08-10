@@ -1,6 +1,11 @@
 # otus_network_engineer
 This repository was created for network labs
 "сетевой инженер в онлайн школе" otus.ru
-### this is a header
-# and this is a header
-[https://otus.ru/learning/400043/]
+
+# lines for a test
+
+| Network IPv4     | Summary net    | Network IPv6             | Summary net         | Description   | Eq&port         |
+|--:|:--------|----------------:|:-----------|----:|----------|
+
+| Network IPv4     | Summary net    | Network IPv6             | Summary net         | Description   | Eq&port         |
+|---|---|---|---|---|---|
