@@ -547,6 +547,31 @@ Primary Secondary Type              Ports
 *[OK]*
 
 
+Подключение к коммутатору S1 с помощью  Telnet: 
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic03.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic04.JPG)
+
+
+
+
+
+В работе интерфейс FastEthernet 0/6:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic05.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic06.JPG)
+
+
+
+
+
+
+Сохранение конфигурации:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/Lab01/pic07.JPG)
+
 
 
 
