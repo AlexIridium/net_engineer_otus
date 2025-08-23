@@ -73,15 +73,25 @@
    ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic11.JPG)
 
 
-   c) Назначение пароля *cisco* для консоли и VTY
+   c,d) Назначение пароля *cisco* для консоли и VTY, назначение пароля *class* для доступа к привилегированному режиму EXEC.
+
+   Коммутатор S1:
+
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic12.JPG)
 
 
+   Коммутатор S2:
 
-   d) Назначение пароля *class* для доступа к привилегированному режиму EXEC.
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic13.JPG)
 
    
 
-   
+
+
+
+
+
+
 
    ### Часть 2. Изучение таблицы MAC-адресов коммутатора
 
@@ -114,6 +124,32 @@
    Сразу после очистки таблицы MAC-адресов в ней отсутствовала какая-либо информация. Прежний MAC-адрес появился спустя некоторое непродолжительное время. Новых MAC-адресов в таблице не появилось.
 
    #### Шаг 4. С компьютера РС-В отправка эхо-запросов на устройства в сети и просмотр MAC-адресов коммутатора.
+
+
+        a,b) На компьютере PC-B через командную строку ввод команды *arp -a* , отправлены эхо-запросы на ПК PC-A, PC-B, на коммутатры S1, S2:
+
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic14.JPG)
+
+        
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic15.JPG)
+
+
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic16.JPG)
+
+
+   В начале, перед тем как были направлены эхо-запросы, команда *arp -a* выдавала пустую таблицу, затем после выполнения эхо-запросов команда *arp -a* вывела таблицу IP-адресов и MAC-адресов. Ответы были получены от всех хостов сети.
+
+
+       c) Отображение таблицы MAC-адресов коммутатора S2:
+
+   
+   ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab02/pic17.JPG)
+
+   Коммутатор не добавлял новые MAC-адреса в таблицу.
+
+   
+
+        
 
          
         
