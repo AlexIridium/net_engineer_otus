@@ -5,6 +5,9 @@
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic00.JPG)
 
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic16.JPG)
+
+
 ### Таблица адресации:
 
 | Устройство | Интерфейс | IPv6-адрес | Link local IPv6-адрес | Длина префикса | Шлюз по умолчанию |
@@ -112,3 +115,35 @@
 
 
 ### Часть 3. Проверка сквозного соединения
+
+      С PC-A отправлен эхо-запрос на FE80::1. Это локальный адрес канала, назначенный G0/1 на R1:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic17.JPG)
+
+      
+      Отправлен эхо-запрос на интерфейс управления S1 адрес IPv6 и link local адрес IPv6  с PC-A:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic18.JPG)
+
+
+       Введена команда tracert на PC-A, чтобы проверить наличие сквозного подключения к PC-B:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic19.JPG)
+
+
+       С PC-B отправлен эхо-запрос на PC-A. С PC-B отправлен эхо-запрос на локальный адрес канала G0/0 на R1:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic20.JPG)
+
+
+       Успешные эхо-запросы подтверждают правильность подключения, а также подтверждают ,что IPv6-адреса на всех устройствах указаны верно.
+
+
+
+
+#### Вопросы для повторения:
+       
+1.	Почему обоим интерфейсам Ethernet на R1 можно назначить один и тот же локальный адрес канала — FE80::1?
+2.	Какой идентификатор подсети в индивидуальном IPv6-адресе 2001:db8:acad::aaaa:1234/64?
+
+
