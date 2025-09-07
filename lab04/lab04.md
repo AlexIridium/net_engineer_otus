@@ -20,6 +20,95 @@
 
 ### Часть 1. Настройка топологии и конфигурация основных параметров маршрутизатора и коммутатора
 
+
+#### Шаг 1. Базовые настройка маршрутизатора
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic09.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic10.JPG)
+
+
+
+#### Шаг 2. Базовые настройки коммутатора
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic11.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic12.JPG)
+
+
+
+
 ### Часть 2. Ручная настройка IPv6-адресов
+
+#### Шаг 1. Установка IPv6-адреса интерфейсу Ethernet на R1.
+
+
+       a, b, c, d) Назначен глобальный индивидуальный IPv6-адрес, указанный в таблице адресации обоим интерфейсам Ethernet на R1. Обеспечено соответствие локальных адресов канала индивидуальному адресу, вручную введен локальный адреса канала на каждом интерфейсе Ethernet на R1. Проверено, что локальный адрес связи изменен на fe80::1. Скриншоты ниже:  
+
+
+Установка IPv6 адреса и перезагрузка маршрутизатора:
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic01.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic02.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic03.JPG)
+
+
+Установка и проверка link-local адреса:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic04.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic05.JPG)
+
+
+*Какие группы многоадресной рассылки назначены интерфейсу G0/0?*
+
+
+
+
+#### Шаг 2. Активация IPv6-маршрутизацию на R1.
+
+        a)	В командной строке на PC-B введена команда ipconfig, чтобы получить данные IPv6-адреса, назначенного интерфейсу ПК:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic13.JPG)
+
+
+       Индивидуальный IPv6-адрес сетевой интерфейсной карте (NIC) на PC-B назначен.
+
+
+       b)	В Части 1 Шаг 1 была активирована IPv6-маршрутизация на R1 с помощью команды IPv6 unicast-routing.
+
+       c)	R1 входит в группу многоадресной рассылки всех маршрутизаторов. 
+       
+*Вопрос: Почему PC-B получил глобальный префикс маршрутизации и идентификатор подсети, которые вы настроили на R1?*
+
+
+
+
+#### Шаг 3. Назначение IPv6-адреса интерфейсу управления (SVI) на S1.
+
+      a)	Назначение адреса IPv6 для S1, назначение этому интерфейсу локального адреса канала fe80::b  :
+
+  ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic07.JPG)
+
+      
+     b)	Проверка правильности назначения IPv6-адресов интерфейсу управления с помощью команды show ipv6 interface vlan1.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic08.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic14.JPG)
+
+
+#### Шаг 4. Назначение компьютерам статических IPv6-адресов.
+
+     a, b)	В свойствах Ethernet для каждого ПК назначен адрес IPv6 согласно исходной таблицы адресов. Оба компьютера имеют правильную информацию адреса IPv6. Каждый компьютер имеет два глобальных адреса IPv6: один статический и один SLACC. Скриншот ниже:
+     
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab04/pic15.JPG)
+
+
 
 ### Часть 3. Проверка сквозного соединения
