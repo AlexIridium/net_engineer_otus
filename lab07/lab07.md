@@ -113,3 +113,56 @@ h.	Скопируйте текущую конфигурацию в файл за
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic13.JPG)
 
 
+### Часть 2:	Определение корневого моста
+
+Для каждого экземпляра протокола spanning-tree (коммутируемая сеть LAN или широковещательный домен) существует коммутатор, выделенный в качестве корневого моста. Корневой мост служит точкой привязки для всех расчётов протокола spanning-tree, позволяя определить избыточные пути, которые следует заблокировать.
+Процесс выбора определяет, какой из коммутаторов станет корневым мостом. Коммутатор с наименьшим значением идентификатора моста (BID) становится корневым мостом. Идентификатор BID состоит из значения приоритета моста, расширенного идентификатора системы и MAC-адреса коммутатора. Значение приоритета может находиться в диапазоне от 0 до 65535 с шагом 4096. По умолчанию используется значение 32768
+
+#### Шаг 1:	Отключите все порты на коммутаторах.
+
+#### Шаг 2:	Настройте подключенные порты в качестве транковых.
+
+Шаг 1 и Шаг 2 выполнены для S1:
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic14.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic15.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic16.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic17.JPG)
+
+
+Шаг 1 и Шаг 2 выполнены для S2:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic18.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic19.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic20.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic21.JPG)
+
+
+
+Шаг 1 и Шаг 2 выполнены для S3:
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic22.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic23.JPG)
+
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab07/pic24.JPG)
+
+
+
+#### Шаг 3:	Включите порты F0/2 и F0/4 на всех коммутаторах.
+
+
+
