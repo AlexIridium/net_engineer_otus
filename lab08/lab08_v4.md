@@ -253,4 +253,77 @@ f.	Настройте время аренды на 2 дня 12 часов и 30 
 
 g.	Затем настройте второй пул DHCPv4, используя имя пула R2_Client_LAN и вычислите сеть, маршрутизатор по умолчанию, и используйте то же имя домена и время аренды, что и предыдущий пул DHCP.
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic20.JPG)
+
+Время аренды адреса выдает ошибку, так как Cisco PT "знает" не все команды.
+
+#### Шаг 2.	Сохраните конфигурацию.
+
+Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+
+Выполнена команда *copy running-config startup-config*
+
+#### Шаг 3.	Проверка конфигурации сервера DHCPv4
+
+a.	Чтобы просмотреть сведения о пуле, выполните команду show ip dhcp pool .
+
+b.	Выполните команду show ip dhcp bindings для проверки установленных назначений адресов DHCP.
+
+c.	Выполните команду show ip dhcp server statistics для проверки сообщений DHCP.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic21.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic22.JPG)
+
+Команда *show ip dhcp server statistics* отсутствует в моей версии Cisco PT.
+
+#### Шаг 4.	Попытка получить IP-адрес от DHCP на PC-A
+
+a.	Из командной строки компьютера PC-A выполните команду ipconfig /all.
+
+b.	После завершения процесса обновления выполните команду ipconfig для просмотра новой информации об IP-адресе.
+
+c.	Проверьте подключение с помощью пинга IP-адреса интерфейса R1 G0/0/1.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic23.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic24.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic25.JPG)
+
+### Часть 3.	Настройка и проверка DHCP-ретрансляции на R2
+
+В части 3 настраивается R2 для ретрансляции DHCP-запросов из локальной сети на интерфейсе G0/0/1 на DHCP-сервер (R1). 
+
+#### Шаг 1.	Настройка R2 в качестве агента DHCP-ретрансляции для локальной сети на G0/0/1
+
+a.	Настройте команду ip helper-address на G0/0/1, указав IP-адрес G0/0/0 R1. Откройте окно конфигурации
+
+b.	Сохраните конфигурацию.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic26.JPG)
+
+#### Шаг 2.	Попытка получить IP-адрес от DHCP на PC-B
+
+Выполнены следующие операции:
+
+a.	Из командной строки компьютера PC-B выполните команду ipconfig /all.
+
+b.	После завершения процесса обновления выполните команду ipconfig для просмотра новой информации об IP-адресе.
+
+c.	Проверьте подключение с помощью пинга IP-адреса интерфейса R1 G0/0/1.
+
+d.	Выполните show ip dhcp binding для R1 для проверки назначений адресов в DHCP.
+
+e.	Выполните команду show ip dhcp server statistics для проверки сообщений DHCP
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic27.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic28.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic29.JPG)
+
+Команда *show ip dhcp server statistics* отсутствует в моей версии Cisco PT.
+
+
 
