@@ -63,11 +63,83 @@
 
 a.	Создайте сеть согласно топологии.
 
-b.	Инициализация устройств
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_01.JPG)
 
 
+b.	Устройства инициализированы
+
+#### Шаг 2. Настройте маршрутизатор R1.
+
+a.	Загрузите следующий конфигурационный скрипт на R1.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_02.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_03.JPG)
+
+P.S. команда *ip dhcp relay information trusted* не определяется моей версией Cisco PT:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_03.JPG)
+
+В качестве аналога была применена команда *ip dhcp relay information trust-all*
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_05.JPG)
 
 
+b.	Проверьте текущую конфигурацию на R1, используя следующую команду:
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_06.JPG)
+
+c.	IP-адресация и интерфейсы находятся в состоянии up / up.
+
+#### Шаг 3. Настройка и проверка основных параметров коммутатора
+
+Для S1 и S2 выполнены следующие действия:
+
+a.	Настройте имя хоста для коммутаторов S1 и S2. Откройте окно конфигурации
+
+b.	Запретите нежелательный поиск в DNS.
+
+c.	Настройте описания интерфейса для портов, которые используются в S1 и S2.
+
+d.	Установите для шлюза по умолчанию для VLAN управления значение 192.168.10.1 на обоих коммутаторах.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_07.JPG)
+
+
+### Часть 2. Настройка сетей VLAN на коммутаторах.
+
+#### Шаг 1. Сконфигруриуйте VLAN 10. 
+
+Добавьте VLAN 10 на S1 и S2 и назовите VLAN - Management. *Скриншот ниже.*
+
+#### Шаг 2. Сконфигруриуйте SVI для VLAN 10.
+
+Настройте IP-адрес в соответствии с таблицей адресации для SVI для VLAN 10 на S1 и S2. Включите интерфейсы SVI и предоставьте описание для интерфейса. *Скриншот ниже.*
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_08.JPG)
+
+#### Шаг 3. Настройте VLAN 333 с именем Native на S1 и S2.
+
+*Скриншот ниже.*
+
+#### Шаг 4. Настройте VLAN 999 с именем ParkingLot на S1 и S2.
+
+*Скриншот ниже.*
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_10.JPG)
+
+### Часть 3. Настройки безопасности коммутатора.
+
+#### Шаг 1. Релизация магистральных соединений 802.1Q.
+
+a.	Настройте все магистральные порты Fa0/1 на обоих коммутаторах для использования VLAN 333 в качестве native VLAN.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_11.JPG)
+
+b.	Убедитесь, что режим транкинга успешно настроен на всех коммутаторах.
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_12.JPG)
+
+c.	Отключить согласование DTP F0/1 на S1 и S2. 
 
 
