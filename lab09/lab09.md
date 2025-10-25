@@ -134,6 +134,8 @@ d.	Установите для шлюза по умолчанию для VLAN у
 
 a.	Настройте все магистральные порты Fa0/1 на обоих коммутаторах для использования VLAN 333 в качестве native VLAN.
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_26.JPG)
+
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_11.JPG)
 
 b.	Убедитесь, что режим транкинга успешно настроен на всех коммутаторах.
