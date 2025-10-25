@@ -202,9 +202,17 @@ a) Дополнительно убедился, что команда "ipv6 dhcp
 
 б) Настройка DHCPv6 на R2 и проверка работы.
 
-Выполнен эхо-запрос до R1 G0/0/0
+Запуск DHCPv6 с поддержкой состояния
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic_v6_15_after.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic_v6_16.JPG)
+
+Проверка работы и выполнение эхо-запросов до R1 G0/0/1
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic_v6_17.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab08/pic_v6_18.JPG)
+
+
 
 
 
