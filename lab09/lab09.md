@@ -136,7 +136,7 @@ a.	Настройте все магистральные порты Fa0/1 на о
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_26.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_11.JPG)
+[](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab09/pic_11.JPG) (убрал по рекомендации преподавателя)
 
 b.	Убедитесь, что режим транкинга успешно настроен на всех коммутаторах.
 
