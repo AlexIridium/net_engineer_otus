@@ -296,32 +296,29 @@ b.	Настройте R1 для проверки подлинности поль
 
 Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1).
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_38.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_48.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_39.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_49.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_40.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_50.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_41.JPG)
+
 
 Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_42.JPG)
 
-*не успешно*
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_51.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_43.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_52.JPG)
 
-
-*Доработать пинг от Sales to Operations. Не работает*
 
 
 Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
 
-*не успешно*
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_53.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_44.JPG)
-
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_54.JPG)
 
 #### Шаг 1. Проанализируйте требования к сети и политике безопасности для планирования реализации ACL.
 
@@ -342,6 +339,10 @@ b.	Настройте R1 для проверки подлинности поль
 | PC-B | HTTPS | 172.16.1.1 | Успех |
 | PC-B | SSH | 10.20.0.4 | Сбой |
 | PC-B | SSH | 172.16.1.1 | Успех |
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_55.JPG)
+
+*смотреть PC-B, там не все работает!*
 
 
 
