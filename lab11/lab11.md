@@ -296,9 +296,24 @@ b.	Настройте R1 для проверки подлинности поль
 
 Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1).
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_38.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_39.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_40.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_41.JPG)
+
 Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_42.JPG)
+
+*Доработать пинг от Sales to Operations. Не работает*
+
+
 Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
+
+
 
 #### Шаг 1. Проанализируйте требования к сети и политике безопасности для планирования реализации ACL.
 
