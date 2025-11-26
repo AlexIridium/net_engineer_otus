@@ -308,11 +308,19 @@ b.	Настройте R1 для проверки подлинности поль
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_42.JPG)
 
+*не успешно*
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_43.JPG)
+
+
 *Доработать пинг от Sales to Operations. Не работает*
 
 
 Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
 
+*не успешно*
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_44.JPG)
 
 
 #### Шаг 1. Проанализируйте требования к сети и политике безопасности для планирования реализации ACL.
