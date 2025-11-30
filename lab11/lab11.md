@@ -326,7 +326,7 @@ b.	Настройте R1 для проверки подлинности поль
 
 #### Шаг 3. Убедитесь, что политики безопасности применяются развернутыми списками доступа.
 
-Выполните следующие тесты. Ожидаемые результаты показаны в таблице:
+Выполните следующие тесты. Ожидаемые результаты показаны в таблице, скрины ниже.
 
 | От | Протокол | Назначение | Результат |
 | --- | --- | --- | --- |
@@ -342,7 +342,15 @@ b.	Настройте R1 для проверки подлинности поль
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_55.JPG)
 
-*смотреть PC-B, там не все работает!*
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_56.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_57.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_58.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_59.JPG)
+
+
 
 
 
