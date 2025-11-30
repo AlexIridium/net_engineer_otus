@@ -100,6 +100,10 @@ j.	Сохраните текущую конфигурацию в файл заг
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab12/pic_06.JPG)
 
+Конфигурация PC-A, PC-B:
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab12/pic_07.JPG)
+
 
 ### Часть 2. Настройка и проверка NAT для IPv4.
 
