@@ -294,37 +294,30 @@ b.	Настройте R1 для проверки подлинности поль
 
 ![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_37.JPG)
 
-Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1).
+Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1). Скрин ниже.
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_48.JPG)
+Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. Скрин ниже.
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_49.JPG)
+Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. Скрин ниже.
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_50.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_60.JPG)
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_61.JPG)
 
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_62.JPG)
 
-Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
-
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_42.JPG)
-
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_51.JPG)
-
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_52.JPG)
-
-
-
-Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
-
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_53.JPG)
-
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_54.JPG)
 
 #### Шаг 1. Проанализируйте требования к сети и политике безопасности для планирования реализации ACL.
 
+При анализе требуется учитывать правила, которые применяются к построению сети. На основе этих правил составляются access list на каждый маршрутизатор. В нашем случае на основе Политик 1-4 составлены по одному access list на каждый маршрутизатор. 
+
 #### Шаг 2. Разработка и применение расширенных списков доступа, которые будут соответствовать требованиям политики безопасности.
 
+Разработка и применение расширенных списоков в данной работе связана с фильтрацией по адресу источника, адресу назначения и номеру порта.
+
 #### Шаг 3. Убедитесь, что политики безопасности применяются развернутыми списками доступа.
+
+Чтобы убедится в корректной работе политики безопасности, проведены тесты в соответствии с таблицей - скрины ниже.
 
 Выполните следующие тесты. Ожидаемые результаты показаны в таблице, скрины ниже.
 
@@ -340,15 +333,17 @@ b.	Настройте R1 для проверки подлинности поль
 | PC-B | SSH | 10.20.0.4 | Сбой |
 | PC-B | SSH | 172.16.1.1 | Успех |
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_55.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_63.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_56.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_57.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_58.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_64.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_59.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_65.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_66.JPG)
+
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_67.JPG)
 
 
 
