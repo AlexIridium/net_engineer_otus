@@ -300,11 +300,13 @@ b.	Настройте R1 для проверки подлинности поль
 
 Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. Скрин ниже.
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_60.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_68.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_61.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_69.JPG)
 
-![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_62.JPG)
+![](https://github.com/AlexIridium/net_engineer_otus/blob/main/lab11/pic_70.JPG)
+
+
 
 
 #### Шаг 1. Проанализируйте требования к сети и политике безопасности для планирования реализации ACL.
